@@ -165,12 +165,13 @@
     <ClCompile Include="SDK\Structures\Documented\YYRValue\YYRValue.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LHConstants.h" />
     <ClInclude Include="LH\Assets.h" />
     <ClInclude Include="LH\Config.h" />
     <ClInclude Include="LH\Filesystem.h" />
+    <ClInclude Include="LH\LHConstants.h" />
     <ClInclude Include="LH\LHCore.h" />
     <ClInclude Include="LH\LHObjects.h" />
+    <ClInclude Include="LH\LHRooms.h" />
     <ClInclude Include="LH\LHSprites.h" />
     <ClInclude Include="PluginSetup.h" />
     <ClInclude Include="SDK\Enums\Enums.hpp" />

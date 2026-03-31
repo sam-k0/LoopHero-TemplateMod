@@ -101,7 +101,10 @@
     <ClInclude Include="LH\LHSprites.h">
       <Filter>LH</Filter>
     </ClInclude>
-    <ClInclude Include="LHConstants.h">
+    <ClInclude Include="LH\LHConstants.h">
+      <Filter>LH</Filter>
+    </ClInclude>
+    <ClInclude Include="LH\LHRooms.h">
       <Filter>LH</Filter>
     </ClInclude>
   </ItemGroup>
