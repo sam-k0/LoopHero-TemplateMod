@@ -8,6 +8,9 @@
 #include "LH/LHCore.h" // mandatory core functions
 #include "LH/Config.h" // ini config
 
+static float MyValue = 8.0; // some random default value to save and load
+
+
 // Unload function, remove callbacks here
 YYTKStatus PluginUnload()
 {

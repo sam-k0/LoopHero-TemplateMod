@@ -14,12 +14,10 @@
 
 HINSTANCE DllHandle; 
 
-std::string gPluginName = "yourName.ModTemplateName.yytk"; // Mandatory name, used to register to core
-std::string cfgFilename = Filesys::GetCurrentDir() + "\\options.ini"; // this will use the pre-existing GameMaker created options.ini file
-std::string SectionName = "TemplateMod"; // your mod's settings section in the ini file, this can theoretically be the same as gPluginname if you want to
-std::string KeyName = "MySetting"; // one setting to save, make as many as needed
-float MyValue = 8.0; // some random default value to save and load
-
+static std::string gPluginName = "yourName.ModTemplateName.yytk"; // Mandatory name, used to register to core
+static std::string cfgFilename = Filesys::GetCurrentDir() + "\\options.ini"; // this will use the pre-existing GameMaker created options.ini file
+static std::string SectionName = "TemplateMod"; // your mod's settings section in the ini file, this can theoretically be the same as gPluginname if you want to
+static std::string KeyName = "MySetting"; // one setting to save, make as many as needed
 
 DllExport std::string GetPluginName() // For yytk, mandatory
 {

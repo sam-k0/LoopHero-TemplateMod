@@ -107,6 +107,9 @@
     <ClInclude Include="LH\LHRooms.h">
       <Filter>LH</Filter>
     </ClInclude>
+    <ClInclude Include="LHUI.h">
+      <Filter>LH</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="SDK">
