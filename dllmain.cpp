@@ -7,6 +7,7 @@
 #include "LH/LHSprites.h"
 #include "LH/LHCore.h" // mandatory core functions
 #include "LH/Config.h" // ini config
+#include "LH/CallbackCore.h"
 
 static float MyValue = 8.0; // some random default value to save and load
 
@@ -18,7 +19,7 @@ YYTKStatus PluginUnload()
     return YYTK_OK;
 }
 
-int CodePostPatch(YYTKCodeEvent* codeEvent, void*)
+int CodePostPatch(YYTKCodeEvent* codeEvent, void* p_rawCCAttr)
 {
     
     CCode* codeObj = std::get<CCode*>(codeEvent->Arguments());
@@ -31,6 +32,14 @@ int CodePostPatch(YYTKCodeEvent* codeEvent, void*)
 
     if (!codeObj->i_pName)
         return YYTK_INVALIDARG;
+
+    auto* ccAttr = static_cast<CallbackCoreAttributes*>(p_rawCCAttr);
+
+    if (ccAttr->call == OriginalCall::CANCELLED) // If you only want to run this post-patch when the original code was run
+    {
+        Misc::Print("Error: this plugin needs the original event to be called!");
+        return YYTK_OK; 
+    }
 
     /* 
     * Do your things here. This is probably the most interesting part of the code
