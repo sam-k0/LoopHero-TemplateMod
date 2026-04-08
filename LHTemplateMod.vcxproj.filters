@@ -107,7 +107,10 @@
     <ClInclude Include="LH\LHRooms.h">
       <Filter>LH</Filter>
     </ClInclude>
-    <ClInclude Include="LHUI.h">
+    <ClInclude Include="LH\CallbackCore.h">
+      <Filter>LH</Filter>
+    </ClInclude>
+    <ClInclude Include="LH\LHUI.h">
       <Filter>LH</Filter>
     </ClInclude>
   </ItemGroup>

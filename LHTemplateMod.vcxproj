@@ -165,8 +165,8 @@
     <ClCompile Include="SDK\Structures\Documented\YYRValue\YYRValue.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LHUI.h" />
     <ClInclude Include="LH\Assets.h" />
+    <ClInclude Include="LH\CallbackCore.h" />
     <ClInclude Include="LH\Config.h" />
     <ClInclude Include="LH\Filesystem.h" />
     <ClInclude Include="LH\LHConstants.h" />
@@ -174,6 +174,7 @@
     <ClInclude Include="LH\LHObjects.h" />
     <ClInclude Include="LH\LHRooms.h" />
     <ClInclude Include="LH\LHSprites.h" />
+    <ClInclude Include="LH\LHUI.h" />
     <ClInclude Include="PluginSetup.h" />
     <ClInclude Include="SDK\Enums\Enums.hpp" />
     <ClInclude Include="SDK\FwdDecls\FwdDecls.hpp" />
