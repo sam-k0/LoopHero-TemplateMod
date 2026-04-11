@@ -40,9 +40,9 @@ namespace LHCore {
 
     DWORD WINAPI ResolveCore(LPVOID lpParam)
     {
-        Misc::Print("Unpacking struct");
+        //Misc::Print("Unpacking struct");
         CoreReadyPack* pack =(CoreReadyPack*)(lpParam);
-        Misc::Print("Importing Core function");
+        //Misc::Print("Importing Core function");
         void* rawCoreReady;
         void* rawRegisterModule;
         void* rawUnregisterModule;
@@ -58,7 +58,7 @@ namespace LHCore {
                 pCoreReady = reinterpret_cast<CoreReady>(rawCoreReady);
                 if (pCoreReady() == true)
                 {
-                    Misc::Print("Core is present", CLR_GREEN);
+                    //Misc::Print("Core is present", CLR_GREEN);
                     // Loading register function
                     if (PmGetExported("RegisterModule", rawRegisterModule) == YYTK_OK)
                     {
