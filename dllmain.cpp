@@ -8,6 +8,7 @@
 #include "LH/LHCore.h" // mandatory core functions
 #include "LH/Config.h" // ini config
 #include "LH/CallbackCore.h"
+#include "LH/LHUI.h"
 
 static float MyValue = 8.0; // some random default value to save and load
 

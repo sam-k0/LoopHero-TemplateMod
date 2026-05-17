@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
-#include "PluginSetup.h"
-#include "LH/LHObjects.h"
+#include "../PluginSetup.h"
+#include "LHObjects.h"
 
 // Useful bindings to UI related functionality
 namespace LHUI 
@@ -28,7 +28,7 @@ namespace LHUI
 		}
 	};
 
-	class Button : private UIElementBase{
+	class Button : public UIElementBase{
 	public:
 		Button(const char* buttonText, double x, double y, double depth = -200.0)
 		{
@@ -47,7 +47,7 @@ namespace LHUI
 
 	};
 
-	class Message : private UIElementBase
+	class Message : public UIElementBase
 	{
 	public:
 		// Creates a message in the foreground that takes focus
